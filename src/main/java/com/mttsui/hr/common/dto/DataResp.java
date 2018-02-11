@@ -8,6 +8,15 @@ public class DataResp<T> extends Resp {
 
     private T data;
 
+    public DataResp() {
+        super(Const.RESP_OK, Const.RESP_OK_MSG);
+    }
+
+    public DataResp(T data) {
+        super(Const.RESP_OK, Const.RESP_OK_MSG);
+        this.data = data;
+    }
+
     public T getData() {
         return data;
     }
